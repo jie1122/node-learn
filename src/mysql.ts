@@ -8,13 +8,6 @@ const connection = mysql.createConnection({
   database: 'sy_lims_db', // 数据库名称
 })
 
-const connection2 = mysql.createConnection({
-  host: 'localhost', // 数据库主机名
-  port: 3306,
-  user: 'root', // 数据库用户名
-  password: '*qO?2u+wIsqa', // 数据库密码
-  database: 'sy_lims_db', // 数据库名称
-})
 
 // 连接到数据库
 connection.connect(err => {
