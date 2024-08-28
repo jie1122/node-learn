@@ -1,0 +1,52 @@
+{"v":"2","ps":"剩余流量：82.39% 247.16GB","add":"www.g00gle.com","port":"10086","id":"2661b5f8-8062-34a5-9371-a44313a75b6b","aid":"2","net":"tcp","type":"none","host":"","tls":""}
+{"v":"2","ps":"过期时间：2024-09-22 16:51:04","add":"www.g00gle.com","port":"10086","id":"2661b5f8-8062-34a5-9371-a44313a75b6b","aid":"2","net":"tcp","type":"none","host":"","tls":""}
+
+{"host":"","path":"","tls":"","verify_cert":true,"add":"teqok-g06.jp05-vm5.entry.rtysjur.quest","port":"64659","aid":"1","net":"tcp","type":"none","v":"2","ps":"日本S05 | 下载专用 | x0.01","id":"0cd58c68-8a97-35f5-a6e4-59302508b038","class":5}
+{"host":"","path":"","tls":"","verify_cert":true,"add":"ezgey-g06.jp06-vm5.entry.rtysjur.quest","port":"667","aid":"1","net":"tcp","type":"none","v":"2","ps":"日本S06 | 下载专用 | x0.01","id":"0cd58c68-8a97-35f5-a6e4-59302508b038","class":5}
+{"host":"","path":"","tls":"","verify_cert":true,"add":"eia1y-g06.hk09-vm5.entry.v50307shvkaa.art","port":"15269","aid":"1","net":"tcp","type":"none","v":"2","ps":"香港S09 | IEPL","id":"0cd58c68-8a97-35f5-a6e4-59302508b038","class":5}
+{"host":"bgp-01-10.entry-0.chinasnow.net","path":"/","tls":"","verify_cert":true,"add":"l2o4u-g06.hk10-vm5.entry.v50307shvkaa.art","port":"13487","aid":"1","net":"ws","type":"none","v":"2","ps":"香港S10 | IEPL","id":"0cd58c68-8a97-35f5-a6e4-59302508b038","class":5}
+{"host":"bgp-01-11.entry-0.chinasnow.net","path":"/tutorial/iphone13.m3u8","tls":"","verify_cert":true,"add":"wldr6-g06.hk11-vm5.entry.v50307shvkaa.art","port":"579","aid":"1","net":"ws","type":"none","v":"2","ps":"香港S11 | IEPL","id":"0cd58c68-8a97-35f5-a6e4-59302508b038","class":5}
+{"host":"","path":"","tls":"tls","verify_cert":true,"add":"6z38d-g06.jp01-0986-vm0.entry.fr0307a.art","port":"21586","aid":"1","net":"tcp","type":"none","v":"2","ps":"免费-日本1-Ver.6","id":"0cd58c68-8a97-35f5-a6e4-59302508b038","class":0}
+{"host":"","path":"","tls":"","verify_cert":true,"add":"s2ily-g06.jp02-9a99-vm0.entry.fr0307a.art","port":"11778","aid":"1","net":"tcp","type":"none","v":"2","ps":"免费-日本2-Ver.7","id":"0cd58c68-8a97-35f5-a6e4-59302508b038","class":0}
+{"host":"","path":"","tls":"tls","verify_cert":true,"add":"m039b-g06.jp03-7d22-vm0.entry.fr0307a.art","port":"21586","aid":"1","net":"tcp","type":"none","v":"2","ps":"免费-日本3-Ver.6","id":"0cd58c68-8a97-35f5-a6e4-59302508b038","class":0}
+{"host":"","path":"","tls":"","verify_cert":true,"add":"7kxu2-g06.jp04-3771-vm0.entry.fr0307a.art","port":"449","aid":"1","net":"tcp","type":"none","v":"2","ps":"免费-日本4-Ver.7","id":"0cd58c68-8a97-35f5-a6e4-59302508b038","class":0}
+{"host":"","path":"","tls":"","verify_cert":true,"add":"gpo7g-g06.jp05-6786-vm0.entry.fr0307a.art","port":"46487","aid":"1","net":"tcp","type":"none","v":"2","ps":"免费-日本5-Ver.8","id":"0cd58c68-8a97-35f5-a6e4-59302508b038","class":0}
+{"host":"","path":"","tls":"tls","verify_cert":true,"add":"spo67-g06.jp06-7c5a-vm0.entry.fr0307a.art","port":"28788","aid":"1","net":"tcp","type":"none","v":"2","ps":"免费-日本6-Ver.7","id":"0cd58c68-8a97-35f5-a6e4-59302508b038","class":0}
+{"host":"","path":"","tls":"","verify_cert":true,"add":"cvsnt-g06.jp07-1f28-vm0.entry.fr0307a.art","port":"28788","aid":"1","net":"tcp","type":"none","v":"2","ps":"免费-日本7-Ver.1","id":"0cd58c68-8a97-35f5-a6e4-59302508b038","class":0}
+
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@3lwg1-g06.hk01-ae5.entry.v50307shvkaa.art:19276#香港S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@fqg15-g06.jp01-ae5.entry.v50307shvkaa.art:477#日本S01 | x0.8
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@8w2rl-g06.hk02-ae5.entry.v50307shvkaa.art:14564#香港S02 | IEPL
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@z6vso-g06.jp02-ae5.entry.v50307shvkaa.art:487#日本S02 | x0.8
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@gjl4a-g06.hk03-ae5.entry.v50307shvkaa.art:764#香港S03 | IEPL
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@8ec5j-g06.jp03-ae5.entry.v50307shvkaa.art:492#日本S03 | x0.8
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@6igwy-g06.hk04-ae5.entry.v50307shvkaa.art:808#香港S04 | IEPL
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@shl9u-g06.jp04-ae5.entry.v50307shvkaa.art:497#日本S04 | x0.8
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@3zryz-g06.hk05-ae5.entry.v50307shvkaa.art:1816#香港S05 | IEPL
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@0zpgz-g06.hk06-ae5.entry.v50307shvkaa.art:1417#香港S06 | x0.8
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@xmndy-g06.hk07-ae5.entry.v50307shvkaa.art:1424#香港S07 | x0.8
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@l795k-g06.jp07-ae5.entry.v50307shvkaa.art:14009#日本S07 | x0.8
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@1lw9h-g06.hk08-ae5.entry.v50307shvkaa.art:18647#香港S08 | x0.8
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@qcu6y-g06.jp08-ae5.entry.v50307shvkaa.art:12547#日本S08 | x0.8
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@quaj8-g06.jp09-ae5.entry.v50307shvkaa.art:11162#日本S09 | x0.8
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@snyae-g06.jp10-ae5.entry.v50307shvkaa.art:16528#日本S10 | x0.8
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@7lc72-g06.jp11-ae5.entry.v50307shvkaa.art:17745#日本S11 | x0.8
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@zfrrt-g06.jp12-ae5.entry.v50307shvkaa.art:502#日本S12 | IEPL | 测试
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@2j8xr-g06.sg01-ae5.entry.v50307shvkaa.art:20004#新加坡S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@c1rnp-g06.sg02-ae5.entry.v50307shvkaa.art:20079#新加坡S02
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@mvnmk-g06.tw01-ae5.entry.v50307shvkaa.art:20009#台湾S01 | IEPL | x2
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@d16fq-g06.us01-ae5.entry.v50307shvkaa.art:20014#美国S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@6hzwb-g06.us02-ae5.entry.v50307shvkaa.art:20019#美国S02
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@f1566-g06.gb01-ae5.entry.v50307shvkaa.art:20024#英国S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@fccvn-g06.ar01-ae5.entry.v50307shvkaa.art:20029#阿根廷S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@e37uz-g06.ru01-ae5.entry.v50307shvkaa.art:20034#俄罗斯S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@97s9g-g06.tr01-ae5.entry.v50307shvkaa.art:20039#土耳其S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@5ax5k-g06.kr01-ae5.entry.v50307shvkaa.art:20044#韩国S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@8ufn8-g06.in01-ae5.entry.v50307shvkaa.art:20049#印度S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@955vc-g06.de01-ae5.entry.v50307shvkaa.art:20054#德国S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@44qg4-g06.ca01-ae5.entry.v50307shvkaa.art:20059#加拿大S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@xhpn9-g06.au01-ae5.entry.v50307shvkaa.art:20064#澳大利亚S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@7fkc2-g06.fr01-ae5.entry.v50307shvkaa.art:20069#法国S01
+aes-256-gcm:0cd58c68-8a97-35f5-a6e4-59302508b038@6ptto-g06.ua01-ae5.entry.v50307shvkaa.art:20074#乌克兰S01
+
+
