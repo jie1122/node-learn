@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename)
 console.log('__dirname----',__dirname)
 
 // 获取目标文件绝对路径
-const fullPath = path.resolve(__dirname,'./assets/data/test.txt')
+const fullPath = path.resolve(__dirname,'../assets/data/test.txt')
 console.log('fullPath----',fullPath)
 
 const data =  fs.readFileSync(fullPath,'utf-8');

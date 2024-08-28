@@ -54,7 +54,7 @@ function getErrorData(list: any[]) {
   list.forEach(row => {
     const v = row.form_variables
     for (const key in v) {
-      if (key.startsWith('HPV') && parseFloat(v[key]) > 0  ) {
+      if (key.startsWith('HPV') && parseFloat(v[key]) > 0 &&  parseFloat(v[key]) < 2 ) {
         return errorList.push(row)
       }
     }
