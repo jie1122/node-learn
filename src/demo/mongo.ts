@@ -1,6 +1,6 @@
 import { MongoClient , Db ,Collection} from "mongodb";
 
-const client = new MongoClient('mongodb://localhost:27017');
+const client:MongoClient = new MongoClient('mongodb://localhost:27017');
 let test_db:Db
 try {
   await client.connect()
@@ -13,7 +13,7 @@ try {
 const testCollection:Collection = test_db.collection('test_collection');
 testCollection.find({}).toArray().then (res => {
   console.log(res);
-  
+  client.close();
 })
 
 // testCollection.insertMany([

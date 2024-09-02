@@ -8,38 +8,37 @@ const option = {
   password: 'root', // 数据库密码
   database: 'yudao-cloud', // 数据库名称
 }
+const mysqlUtil = new MysqlUtil(option)
+await mysqlUtil.connect()
 
-
-const query = `
-  SELECT * FROM bpm_process_instance_ext
-  WHERE name = "人乳头瘤病毒(HPV23)"
-`
-async function  main() {
-  const list:any[] = await getData()
+async function main() {
+  const list: any[] = await getData()
   console.log(list)
-  const errorList =  await getErrorData(list)
+  const errorList = await getErrorData(list)
   console.log(errorList)
 
   saveFile('hpv23.json', JSON.stringify(errorList, null, 2))
-
 }
 
-main() 
+main()
 
 /** 查询出所有的hpv23 检测结果 */
 async function getData() {
-  const mysqlUtil = new MysqlUtil(option)
+  const query = `
+    SELECT * FROM bpm_process_instance_ext
+    WHERE name = "人乳头瘤病毒(HPV23)"
+  `
   const list = []
 
   try {
-    const res = await mysqlUtil.queryData(query) as any[]
+    const res = await mysqlUtil.queryData({ sql: query })
     res.forEach(e => {
       if (e.form_variables) {
+        // 解析 form_variables
         e.form_variables = JSON.parse(e.form_variables)
       }
       list.push(e)
     })
-
   } finally {
     mysqlUtil.end()
   }
@@ -54,7 +53,11 @@ function getErrorData(list: any[]) {
   list.forEach(row => {
     const v = row.form_variables
     for (const key in v) {
-      if (key.startsWith('HPV') && parseFloat(v[key]) > 0 &&  parseFloat(v[key]) < 2 ) {
+      if (
+        key.startsWith('HPV') &&
+        parseFloat(v[key]) > 0 &&
+        parseFloat(v[key]) < 2
+      ) {
         return errorList.push(row)
       }
     }
