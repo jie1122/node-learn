@@ -23,7 +23,7 @@ export class MysqlUtil {
           console.error('连接到数据库时出错: ' + error.stack)
           return reject(error)
         } else {
-          console.log('成功连接到数据库 ' + this.connection.config)
+          console.log('成功连接到数据库 ' + this.connection.config.database)
           return resolve(true)
         }
       })
