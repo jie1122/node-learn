@@ -1,5 +1,5 @@
 import MysqlUtil from './utils/mysqlUtil.ts'
-import { saveFile } from './utils/saveFile.ts'
+import { saveFile } from './utils/fileUtil.ts'
 
 const option = {
   host: '192.168.1.66', // 数据库主机名
