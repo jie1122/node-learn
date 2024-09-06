@@ -8,15 +8,24 @@ await local_mongo_client.connect()
 const cache_data_db = local_mongo_client.db('cache_data')
 console.log('local_mongo_client  connected')
 
+/** pigx数据库 */
+const pigx_mongo_client: MongoClient = new MongoClient(
+  'mongodb://sy_admin:sy_admin@192.168.1.66:27017'
+)
+await pigx_mongo_client.connect()
+const sy_product_center = pigx_mongo_client.db('sy_product_center')
+console.log('pigx_mongo_client  connected')
+
+
 async function main() {
-  const pageSize = 100
+  const pageSize = 1000
   let finishedCount = 0 // 已处理数据数量
   let total = 0
 
   const res = await getSampleList()
   total = res.total
   console.log('共' + total + '条数据')
-
+  // return
   while (finishedCount < total) {
     const res = await getSampleList(finishedCount, pageSize)
     total = res.total
@@ -24,12 +33,13 @@ async function main() {
       sample.result = formatResult(sample)
     }
 
-    await saveSampleList(res.list)
+    await saveSampleListToPigx(res.list)
     finishedCount += res.list.length
     console.log(`已处理${finishedCount}/${total}条`)
   }
 
   local_mongo_client.close()
+  pigx_mongo_client.close()
 }
 main()
 
@@ -37,14 +47,25 @@ main()
 function formatResult(sample) {
   const originResult = sample.extend
   const confFields = sample.formConf?.form_design?.output
-  let result = {}
-
+  let result = []
+  sample.form_title = sample.formConf?.form_title || '未定义'
   if (confFields) {
     confFields.forEach(e => {
-      result[e.name] = originResult[e.key]
+      result.push({
+        name:e.name,
+        type:e.type,
+        value:originResult[e.key],
+      })
     })
   } else {
-    result = originResult
+    for (const key in originResult) {
+      if (Object.prototype.hasOwnProperty.call(originResult, key)) {
+        result.push({
+          name:key,
+          value:originResult[key],
+        })
+      }
+    }
   }
 
   return result
@@ -70,4 +91,10 @@ async function getSampleList(skip = 0, pageSize = 10) {
 function saveSampleList(samples) {
   const huin_sample = cache_data_db.collection('huin_result')
   return huin_sample.insertMany(samples)
+}
+
+// 保存到pigx mongo
+function saveSampleListToPigx(samples) {
+  const dms_test_task_sample = sy_product_center.collection('dms_test_task_sample')
+  return dms_test_task_sample.insertMany(samples)
 }

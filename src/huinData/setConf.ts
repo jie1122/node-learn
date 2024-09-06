@@ -26,7 +26,7 @@ const cache_data_db = local_mongo_client.db('cache_data')
 console.log('local_mongo_client  connected')
 
 async function main() {
-  const pageSize = 100
+  const pageSize = 1000
   let finishedCount = 0 // 已处理数据数量
   let total = 0
 
@@ -35,12 +35,11 @@ async function main() {
   const res = await getSampleList()
   total = res.total
   console.log('共' + total + '条数据')
-
-  while (finishedCount < 200) {
+  while (finishedCount < total) {
     const res = await getSampleList(finishedCount, pageSize)
     total = res.total
     for (const sample of res.list) {
-      console.log('-----------------' + sample.formKey + '-----------------')
+      // console.log('-----------------' + sample.formKey + '-----------------')
       sample.formConf = confMap.get(sample.formKey)
     }
 
@@ -61,7 +60,8 @@ main()
 async function getSampleList(skip = 0, pageSize = 10) {
   const query = {
     formKey: { $exists: true, $ne: '' },
-    createTime: { $lt: 20240527000000 },
+    delFlag: 'FALSE'
+    // createTime: { $lt: 20240527000000 },
   }
 
   // 慧因样本集合
