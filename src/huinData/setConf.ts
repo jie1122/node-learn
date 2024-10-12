@@ -1,5 +1,6 @@
 import { MongoClient } from 'mongodb'
 import MysqlUtil from '../utils/mysqlUtil.ts'
+import { RowDataPacket } from 'mysql2'
 
 /** 慧因mysql */
 const huindata_mysql = new MysqlUtil({
@@ -86,7 +87,7 @@ async function getAllConfMap() {
   const queryOptions = {
     sql: 'SELECT * FROM hd_cdm_form WHERE del_flag= "FALSE"',
   }
-  const confList = await huindata_mysql.queryData(queryOptions)
+  const confList = await huindata_mysql.queryData(queryOptions) as RowDataPacket[]
   const confMap = new Map()
   confList.forEach(e => {
     e.form_design = JSON.parse(e.form_design)

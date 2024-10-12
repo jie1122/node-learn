@@ -31,8 +31,8 @@ export class MysqlUtil {
   }
 
   queryData(option: QueryOptions) {
-    return new Promise<RowDataPacket[]>((resolve, reject) => {
-      this.connection.query<RowDataPacket[]>(
+    return new Promise<QueryResult>((resolve, reject) => {
+      this.connection.query(
         option,
         (error, results, fields) => {
           if (error) {
