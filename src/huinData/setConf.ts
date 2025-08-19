@@ -1,9 +1,8 @@
 import { MongoClient } from 'mongodb'
-import MysqlUtil from '../utils/mysqlUtil.ts'
-import { RowDataPacket } from 'mysql2'
+import mysql , { RowDataPacket }from 'mysql2/promise';
 
 /** 慧因mysql */
-const huindata_mysql = new MysqlUtil({
+const huindata_mysql = await mysql.createConnection({
   host: '192.168.1.31',
   port: 3306,
   user: 'sy',
@@ -87,7 +86,7 @@ async function getAllConfMap() {
   const queryOptions = {
     sql: 'SELECT * FROM hd_cdm_form WHERE del_flag= "FALSE"',
   }
-  const confList = await huindata_mysql.queryData(queryOptions) as RowDataPacket[]
+  const [confList, fields] = await huindata_mysql.query<RowDataPacket[]>(queryOptions)
   const confMap = new Map()
   confList.forEach(e => {
     e.form_design = JSON.parse(e.form_design)
