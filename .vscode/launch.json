@@ -12,7 +12,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Current ts File",
-      "runtimeExecutable": "ts-node",
+      "runtimeArgs": ["--loader", "ts-node/esm"],
       "program": "${file}",
       "cwd": "${workspaceFolder}"
     }
